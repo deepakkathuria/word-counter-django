@@ -1,0 +1,8 @@
+<h1>INPUT THE TEXT WHICH YOU WANT TO COUNT THE NUMBER OF WORDS</h1>
+<form method="POST" action="/counter">
+{% comment %} <form method="" action="/counter"> {% endcomment %}
+  {% csrf_token %}
+  <textarea name="text" rows="20" cols="80"></textarea><br>
+  <button type="submit">Press Me</button>
+
+</form>
